@@ -5,7 +5,9 @@
   "homepage": "https://justinpancasetome.github.io/Webpack_Test/",
   "scripts": {
     "build": "webpack",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist && cp CNAME dist/"
   },
   "keywords": [],
   "author": "",
